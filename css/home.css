@@ -1,0 +1,84 @@
+a{
+   text-decoration: none;
+   color: white ;
+}
+.nav__menu{
+   display: flex;
+   background-color: #30343F;
+   justify-content:space-between;
+   width: auto;
+   padding: 39px 70px;
+}
+ul{
+   display: flex;
+list-style: none;
+}
+li a {
+   font-size: 20px;
+   margin:  0 25px ;
+}
+.banner__container{
+display: flex;
+flex-direction: column;
+}
+.banner__texts{
+   margin: 70px ;
+   color: white;
+}
+.banner__texts h3 {
+font-size: 38px;
+margin-bottom: 0;
+}
+.banner__texts p {
+   font-size: 18px;
+}
+.banner__btn{
+   border-style: none;
+   border-radius: 20px;
+   width: 211px;
+   height: 47px;
+}
+.banner__btn a {
+   color: black;
+   font-size: 20px;
+}
+
+.banner__container img{
+   filter: blur(3px);
+   position: absolute;
+max-height: 388px;
+width: 100%;
+object-fit: cover;
+object-position: bottom;
+z-index: -1;
+}
+
+/* CARDS  */
+.card__container{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.card__texts__container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.card__texts{
+   border-bottom: 3px solid #FF3333  ;
+   margin-bottom: 34px;
+}
+.card__texts h2{
+   font-size: 46px;
+}
+.card__texts p{
+   font-size: 24px;
+}
+.card__texts__container button{
+background-color: #30343F;
+border-radius: 20px;
+width: 290px;
+padding: 18px 0;
+}
+.card__texts__container a{
+}
