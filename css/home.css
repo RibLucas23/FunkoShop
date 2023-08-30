@@ -1,7 +1,13 @@
+body{
+margin: 0;
+padding: 0;
+font: 1em Raleway;
+}
 a{
    text-decoration: none;
    color: white ;
 }
+/* NAV MENU  */
 .nav__menu{
    display: flex;
    background-color: #30343F;
@@ -17,9 +23,15 @@ li a {
    font-size: 20px;
    margin:  0 25px ;
 }
+/* BANNER  */
 .banner__container{
+   filter: contrast(110%);
 display: flex;
 flex-direction: column;
+background-image: url("../imgs/funkos-banner.webp");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom center;
 }
 .banner__texts{
    margin: 70px ;
@@ -43,26 +55,24 @@ margin-bottom: 0;
    font-size: 20px;
 }
 
-.banner__container img{
-   filter: blur(3px);
-   position: absolute;
-max-height: 388px;
-width: 100%;
-object-fit: cover;
-object-position: bottom;
-z-index: -1;
-}
 
+main{
+   margin:  0 110px;
+}
 /* CARDS  */
 .card__container{
 display: flex;
-justify-content: center;
-margin-top: 50px;
+justify-content: space-around;
+}
+.card__container img{
+max-width: 600px;
+max-height: 600px;
 }
 .card__texts__container{
 display: flex;
 flex-direction: column;
 justify-content: center;
+width: 100%;
 }
 .card__texts{
    border-bottom: 3px solid #FF3333  ;
@@ -80,5 +90,56 @@ border-radius: 20px;
 width: 290px;
 padding: 18px 0;
 }
-.card__texts__container a{
+
+/* NUEVOS LANZAMIENTOS */
+.newFunkos__title{
+   font-family: Raleway;
+font-size: 46px;
+font-weight: 700;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.newFunkos__container{
+display: flex;
+justify-content: space-evenly;
+}
+.newFunkos__card{
+   width: 360px;
+display: flex;
+flex-direction: column;
+}
+.newFunkos__img__container{
+position: relative;
+}
+.newFunkos__img{
+   width: 360px;
+   }
+.newFunkos__span{
+   background-color: #FF3333 ;
+   text-align: center;
+   padding: 10px;
+   width: 97px;
+   color: white;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.newFunkos__texts{
+font: 1em Inter;
+}
+.newFunkos__texts__title{
+   font-weight: 700;
+font-size: 18px;
+}
+
+.newFunkos__texts__price{
+font-size: 16px;
+font-weight: 400;
+}
+.newFunkos__texts__cuotas{
+   font-size: 12px;
+   font-weight: 700;
+   color: #1D84B5;
 }
